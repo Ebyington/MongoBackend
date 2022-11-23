@@ -7,6 +7,6 @@ router.use('/thought', thoughtRoutes);
 module.exports = router;
 
 
-{
-    "thoughtText": "wow"
-}
+// {
+//     "thoughtText": "wow"
+// }
