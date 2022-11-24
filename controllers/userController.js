@@ -27,7 +27,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   updateUser(req,res) {
-    User.findOneAndUpdate({ _id: req.params.userId }, { ...req.body }, { $set: req.body },
+    User.findOneAndUpdate({ _id: req.params.userId }, { $set: req.body },
         { runValidators: true, new: true } )
       .then((user) => res.json(user))
       .catch((err) => res.status(500).json(err));
